@@ -5,41 +5,77 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:src="@drawable/koKR_01"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <ImageView
-        android:src="@drawable/koKR_02"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="100dp">
 
-    <ImageView
-        android:src="@drawable/koKR_03"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
+            <ImageView
+                android:id="@+id/card01"
+                android:scaleType="fitXY"
+                android:src="@drawable/kokr_01"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
 
-    <ImageView
-        android:src="@drawable/koKR_04"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
 
-    <ImageView
-        android:src="@drawable/koKR_05"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
+        </androidx.cardview.widget.CardView>
 
-    <ImageView
-        android:src="@drawable/koKR_06"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
 
-    <ImageView
-        android:src="@drawable/koKR_07"
-        android:layout_width="150dp"
-        android:layout_height="150dp"/>
+
+
+        <ImageView
+            android:src="@drawable/kokr_02"
+            android:scaleType="fitXY"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+        <ImageView
+            android:src="@drawable/kokr_03"
+            android:scaleType="fitXY"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/kokr_04"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+        <ImageView
+            android:src="@drawable/kokr_05"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+        <ImageView
+            android:src="@drawable/kokr_06"
+            android:layout_width="130dp"
+            android:layout_height="130dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/kokr_07"
+            android:layout_width="150dp"
+            android:layout_height="150dp"/>
+
+
+    </LinearLayout>
+
 
 </LinearLayout>
